@@ -1,0 +1,361 @@
+header .head_toplink .sublevel2,header .access-links .sublevel2{
+	padding: 10px;
+}
+header .head_toplink .sublevel2 h2, header .access-links .sublevel2 h2{
+	font-family: 'MyriadPro-Bold', san-serif;
+	font-size: 1.2rem;
+	margin-bottom: inherit;
+	color: #FFFFFF;
+}
+header .head_toplink .sublevel2 h3, header .access-links .sublevel2 h3{
+	font-size: 1rem;
+	color: #FFFFFF;
+	border-bottom: 1px solid #ccc;
+	margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+header .access-links{
+	flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+header .access-links .abtools{
+	display: none;
+	background:rgba(61,126,219,0.7);
+	width: auto;
+}
+
+
+/* ************** accessibility-link ************** */
+header .head_toplink .accessibility-link{
+	position:relative;
+}
+header .head_toplink .accessibility-link > a, header .access-links .ablink > a {
+	/*width:14px;*/
+	/*height:14px;*/
+	/*background:url(https://www.tatasteel.com/media/14125/icon-accessibility.png) no-repeat;*/
+	/*background:url(https://www.tatasteel.com/media/14199/icon-accessibility-large.png) no-repeat;*/
+	font-size:0;
+	position:relative;
+	background-size: cover;
+}
+header .head_toplink .guide_link > a, header .access-links .glink > a {
+	font-size:0;
+	position:relative;
+}
+header .head_toplink .guide_link > a:hover, header .access-links .glink > a:hover {
+	background: rgba(61,126,219,1);
+}
+
+header .head_toplink .accessibility-link > a:hover,
+header .head_toplink .accessibility-link > a.active{
+	/*background:url(https://www.tatasteel.com/media/14126/icon-accessibility-hover.png) no-repeat;*/
+	/*background:url(https://www.tatasteel.com/media/14200/icon-accessibility-hover-large.png) no-repeat;*/
+	background-size: cover;
+}
+header .head_toplink .accessibility-link > a.active:before{
+	border-left:10px solid transparent;
+	border-right:10px solid transparent;
+	border-bottom:10px solid #3768ad;
+	position:absolute;
+	top:25px;
+	right:50%;
+	content:"";
+	margin-right:-10px;
+}
+
+header.smallhead .head_toplink .accessibility-link > a.active:before{
+	top:20px;
+}
+header.smallhead .head_toplink .accessibility-link > a:hover,
+header.smallhead .head_toplink .accessibility-link > a.active{
+	/*background:url(https://www.tatasteel.com/media/14126/icon-accessibility-hover.png) no-repeat;*/
+	/*background:url(https://www.tatasteel.com/media/14200/icon-accessibility-hover-large.png) no-repeat;*/
+	background-size: cover;
+}
+
+header .head_toplink .accessibility-link > a{
+    width: 40px;
+    height: 40px;
+    /*background: url(https://www.tatasteel.com/media/14199/icon-accessibility-large.png) no-repeat center;*/
+    font-size: 0;
+    position: relative;
+	background-size: cover;
+}
+header .head_toplink ul{
+	display: flex;
+    align-items: center;
+}
+
+.reset-accessibility{
+	background: #ff0000;
+	width: 100%;
+	padding: 5px 0;
+	text-align: center;
+	color: #FFFFFF;
+	font-family: 'MyriadPro-Bold', san-serif;
+	font-size: 1.2rem;
+	border-radius: 5px;
+}
+.reset-accessibility:hover{
+	color: #FFFFFF;
+}
+
+.banner-caption p{
+	font-size: 1.125rem;
+}
+
+/*body.add-contrast * {
+    background: black !important;
+    background-color: black !important;
+    background-image: none !important;
+    border: none;
+    color: yellow !important;
+}*/
+body.add-contrast{
+	background: #000000 !important;
+}
+body.add-contrast *{
+	color: #FFFF00 !important;
+}
+body.add-contrast2{
+	background: #000000 !important;
+}
+body.add-contrast2 *{
+	color: #00FFFF !important;
+}
+body.add-contrast #consolPopup *{
+	color: #333 !important;
+}
+body.add-contrast #consolPopup h1, 
+body.add-contrast #consolPopup a, 
+body.add-contrast #consolPopupImpairedDD h1 {
+    color: #3d7edb !important;
+}
+body.add-contrast #consolPopupImpairedDD .select-types select,
+body.add-contrast #consolPopupImpairedDD .select-types select option{
+	color: #333 !important;
+}
+/*#consolPopup:not(*){
+    color: #FFFF00 !important;
+}*/
+/*body.add-contrast #breadcrumb{
+	border-bottom: 1px solid #e5e5e5;
+}*/
+body.add-contrast #breadcrumb.sticky {
+    background: #000 none repeat scroll 0 0;
+}
+body.add-contrast2 #breadcrumb.sticky {
+    background: #000 none repeat scroll 0 0;
+}
+body.add-contrast .quick_menu .quick_menu_btn {
+    background: #000;
+}
+body.add-contrast .cancel-btn-right {
+    background: #000;
+}
+body.add-contrast .sublevel2 h2,
+body.add-contrast .sublevel2 h3,
+body.add-contrast .sublevel2 .reset-accessibility{
+	color: #FFFFFF !important;
+}
+body.add-contrast2 .sublevel2 h2,
+body.add-contrast2 .sublevel2 h3,
+body.add-contrast2 .sublevel2 .reset-accessibility{
+	color: #FFFFFF !important;
+}
+.contrast{
+	margin-bottom: 20px;
+}
+/*
+.btn-normal-contrast,
+.btn-add-contrast{
+	cursor: pointer;
+	margin: 0 10px 0 0;
+	padding: 5px;
+}
+.btn-normal-contrast span,
+.btn-add-contrast span{
+	width: 25px;
+	height: 25px;
+	background: #FFFFFF;
+	border: 1px solid #000;
+	border-radius: 5px;
+	color: #000000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 0;
+	font-family: 'MyriadPro-Bold', san-serif;
+	font-size: 16px !important;
+}
+.btn-add-contrast span{
+	background: #000000;
+	color: #FFFFFF;
+}
+.btn-add-contrast2 span{
+	background: #000000;
+	color: #00ffff;
+}
+body.add-contrast .btn-normal-contrast span{
+    color: #000000 !important;
+}
+body.add-contrast .btn-add-contrast span{
+    color: #FFFFFF !important;
+}
+.btn-normal-contrast.active,
+.btn-add-contrast.active,
+.btn-add-contrast2.active{
+	border: 1px solid #000;
+	border-radius: 5px;
+	background: transparent;
+}*/
+.btn-normal-contrast,
+.btn-add-contrast,
+.btn-add-contrast2{
+	cursor: pointer;
+	margin: 0 10px 0 0;
+	padding: 5px;
+}
+.btn-normal-contrast span,
+.btn-add-contrast span,
+.btn-add-contrast2 span{
+	width: 25px;
+	height: 25px;
+	background: #FFFFFF;
+	border: 1px solid #000;
+	border-radius: 5px;
+	color: #000000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 0;
+	font-family: 'MyriadPro-Bold', san-serif;
+	font-size: 16px !important;
+}
+.btn-add-contrast span{
+	background: #000000;
+	color: #FFFFFF;
+}
+.btn-add-contrast2 span{
+	background: #000000;
+	color: #00ffff;
+}
+body.add-contrast .btn-normal-contrast span{
+    color: #000000 !important;
+}
+body.add-contrast .btn-add-contrast span{
+    color: #FFFFFF !important;
+}
+body.add-contrast .btn-add-contrast2 span{
+    color: #00FFFF !important;
+}
+body.add-contrast2 .btn-add-contrast2 span{
+    color: #FFFFFF !important;
+}
+body.add-contrast2 .btn-add-contrast span{
+    color: #FFFFFF !important;
+}
+body.add-contrast2 .btn-normal-contrast span{
+    color: #000000 !important;
+}
+/*body.add-contrast2 .btn-normal-contrast span .btn-add-contrast span .btn-add-contrast2 span{
+    color: #FFFFFF !important;
+}*/
+.btn-normal-contrast.active,
+.btn-add-contrast.active,
+.btn-add-contrast2.active{
+	border: 1px solid #000;
+	border-radius: 5px;
+	background: transparent;
+}
+body.add-contrast .multi_font_icon,
+.multi_font_icon{
+	color: #FFFFFF !important;
+	font-family: "Times New Roman", Times, serif;
+}
+body.add-contrast2 .multi_font_icon,
+.multi_font_icon{
+	color: #FFFFFF !important;
+	font-family: "Times New Roman", Times, serif;
+}
+
+body.add-contrast .quick_menu .quick_menu_body .quick_menu_head,
+body.add-contrast .quick_menu .quick_menu_body .quick_menu_links,
+body.add-contrast  #breadcrumb ul li:hover ul,
+body.add-contrast #breadcrumb ul ul.dropdown-menu:after{
+	background: #333333;
+}
+
+body.add-contrast2 .quick_menu .quick_menu_body .quick_menu_head,
+body.add-contrast2 .quick_menu .quick_menu_body .quick_menu_links,
+body.add-contrast2  #breadcrumb ul li:hover ul,
+body.add-contrast2 #breadcrumb ul ul.dropdown-menu:after{
+	background: #333333;
+}
+
+body.add-contrast .quick_menu .quick_menu_body ul li a:hover,
+body.add-contrast #breadcrumb ul ul li a:hover,
+body.add-contrast .leader_thumbs ul li a:hover{
+	background: #666666;
+}
+
+body.add-contrast2 .quick_menu .quick_menu_body ul li a:hover,
+body.add-contrast2 #breadcrumb ul ul li a:hover,
+body.add-contrast2 .leader_thumbs ul li a:hover{
+	background: #666666;
+}
+
+body.add-contrast .fancybox-skin {
+    background: #2e2d2d;
+}
+
+body.add-contrast2 .fancybox-skin {
+    background: #2e2d2d;
+}
+
+header .head_toplink .home_link > a,
+header .head_toplink .phone_link > a,
+header .head_toplink .search_link > a,
+header .head_toplink .location_link > a,
+header .head_toplink .accessibility-link > a {
+	display: block;
+}
+.rvNotification {
+	display: none;
+}
+
+body.add-contrast .tab-content .panel.open {
+    background: #333;
+}
+body.add-contrast2 .tab-content .panel.open {
+    background: #333;
+}
+
+body.add-contrast .fc-unthemed td.fc-today {
+    background: #333;
+}
+body.add-contrast .fc-state-active {
+    background: #333 !important;
+}
+body.add-contrast .fc-state-default {
+    background: #222;
+}
+body.add-contrast .fc-state-disabled {
+    background-color: #888;
+}
+body.add-contrast2 .fc-unthemed td.fc-today {
+    background: #333;
+}
+body.add-contrast2 .fc-state-active {
+    background: #333 !important;
+}
+body.add-contrast2 .fc-state-default {
+    background: #222;
+}
+body.add-contrast2 .fc-state-disabled {
+    background-color: #888;
+}
