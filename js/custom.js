@@ -219,6 +219,19 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+  // Get all list items
+  const listItems = document.querySelectorAll('.over_level1 li');
+  const overLevel2 = document.querySelectorAll('.over_level2');
+  listItems.forEach((item, index) => {
+    item.addEventListener('click', () => {
+      listItems.forEach(li => li.classList.remove('active'));
+      overLevel2.forEach(div => div.classList.remove('open'));
+      item.classList.add('active');
+      const menuGet = item.querySelector('.over_level2')
+      menuGet.classList.add('open');
+    });
+  });
+
 // COUNTER JS
 document.addEventListener("DOMContentLoaded", () => {
     function counter(id, start, end, duration) {
