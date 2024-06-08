@@ -1,25 +1,345 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html,body{
-    overflow-x: hidden;
+
+html,
+body {
+  overflow-x: hidden;
 }
 
 #banner_video {
-    position: relative;
-    width: 100%;
-    height: 100vh;
+  position: relative;
+  width: 100%;
+  height: 100vh;
 }
 
 #banner_video video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: bottom;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+/* #sustainabilty{
+  max-height: 600px;
+  height: auto;
+}
+#sustainabilty .carouselExampleCaptions{
+  height: 100%;
+} */
+#sustainabilty .sectiontitle.subst {
+  top: 8%;
+}
+
+#sustainabilty .carousel-indicators {
+  width: auto;
+}
+
+#sustainabilty .carousel-item::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+
+.counter-wrapper .count {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.counter-wrapper {
+  background: #333;
+  background-image: url('../images/Manufacturing_bg.avif');
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  padding: 100px 0;
+}
+
+.counter-wrapper h1 {
+  color: white;
+  text-transform: capitalize;
+  font-weight: bold;
+  text-align: center;
+}
+
+.counter-wrapper:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .1);
+}
+
+.counter-wrapper .counter-inner {
+  position: relative;
+  z-index: 2;
+}
+
+.counter-wrapper .count-icon {
+  font-size: 48px;
+}
+
+.counter_content {
+  text-align: center;
+}
+
+.counter_content p {
+  text-align: center;
+  font-size: 18px;
+  color: white;
+
+}
+
+.counter_content a,
+#making_difference a {
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  color: white;
+  background-color: #e31818;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 25px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.red {
+  color: #e31818;
+}
+
+.counter-inner .row {
+  justify-content: center;
+}
+
+#map_section {
+  height: 600px;
+  background-image: url('../images/louis-hansel-SCc9AndIwJ4-unsplash.jpg');
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center;
+
+}
+
+#map_section::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .4);
+}
+
+#map_section .map_counter {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 20px 0;
+  background-color: rgba(0, 0, 0, .3);
+  ;
+}
+
+#map_section .list_view_info {
+  padding: 16px 0;
+  color: white;
+  text-align: center;
+}
+
+#map_section .list_view_content_title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.25;
+}
+
+#making_difference {
+  padding: 50px 0;
+  background-color: rgba(8, 8, 117, 0.985);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+#making_difference .making_difference_content {
+  text-align: center;
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#making_difference h2 {
+  color: white;
+  font-weight: bold;
+}
+
+#making_difference a {
+  background-color: white;
+  color: rgba(8, 8, 117, 0.985);
+  ;
+}
+
+#making_difference #carouselExampleFade {
+  max-width: 500px !important;
+  width: 100%;
+}
+
+#making_difference .carousel-item img {
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  /* height: 500px;
+  width: 500px !important; */
+
+}
+
+#making_difference .carousel-indicators {
+  margin-left: 20% !important;
+  margin-right: 20% !important;
+}
+
+footer {
+  color: white;
+  padding: 18px 0;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+footer .footer_link_ {
+  display: flex;
+  list-style: none;
+  justify-content: end
+}
+
+footer .footer_link_ a {
+  color: white;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+footer .copyright {
+  color: white;
+  font-size: 16px;
+}
+
+footer .follow_us li {
+  text-transform: capitalize;
+}
+
+footer .follow_us li img {
+  object-fit: cover;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.carousel-indicators .active {
+  background-color: #e31818;
+}
+
+.over_menu ul li a {
+  text-decoration: none;
+}
+
+header .head_toplink {
+  display: flex;
+  padding: 0;
+}
+
+header .head_toplink img {
+  height: 30px;
+  object-fit: contain;
+  aspect-ratio: 3/4;
+
+}
+
+header .logo {
+  margin: 0;
+}
+
+header .humberger_icon {
+  margin-top: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#sustainabilty #carouselExampleCaptions img {
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.over_menu ul.over_level1>li>a img {
+  display: none
+}
+
+.over_menu ul {
+  padding-right: 2rem;
+}
+
+#enquiryBtn {
+  position: fixed;
+  bottom: 50px;
+  right: 0px;
+  z-index: 1000;
+}
+
+#enquiryBtn.btn {
+  background: #e31818;
+  width: 150px;
+  height: 40px;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 0;
+  text-transform: uppercase;
+  transition: all .4s ease-out;
+  margin: 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1px;
+  font-weight: bold
+}
+
+#enquiryBtn.btn a {
+  color: white;
+  text-decoration: none;
+}
+
+#enquiryBtn.btn .svg-inline--fa.fa-w-14 {
+  width: .875em;
 }
 

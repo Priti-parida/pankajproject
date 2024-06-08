@@ -1,0 +1,126 @@
+/* Responsive Styling */
+@media only screen and (max-width:991px) {
+    footer .row {
+      justify-content: center;
+    }
+  
+    footer p {
+      text-align: center;
+    }
+  
+    footer .follow_us {
+      padding: 0;
+      text-align: center;
+    }
+  
+    footer .footer_link_ a {
+      padding: 0 5px;
+      font-size: 14px;
+    }
+  
+    footer .copyright {
+      font-size: 14px;
+      text-align: start;
+    }
+  
+    footer .footer_link_ {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  
+  @media only screnn and (max-width:768px) {
+    .counter-wrapper {
+      padding: 75px 0;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .counter-wrapper .col-lg-3 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+  
+  @media only screen and (max-width:575px) {
+    #banner_video {
+      height: 100%;
+    }
+  
+    #banner_video video {
+      position: unset;
+      height: auto;
+      object-fit: contain;
+      object-position: unset;
+    }
+  
+    #sustainabilty {
+      margin-top: -6px;
+    }
+  
+    header .head_toplink li {
+      padding: 0 5px;
+    }
+  
+    #sustainabilty .sectiontitle span {
+      font-size: 14px;
+      letter-spacing: 3px;
+    }
+  
+    #sustainabilty #carouselExampleCaptions img {
+      height: 385px;
+    }
+  
+    #making_difference #carouselExampleFade {
+      margin: 0 auto 35px;
+      padding: 0 15px;
+    }
+  
+    .counter-wrapper {
+      padding: 50px 0;
+    }
+  
+    .counter-wrapper .py-2.count {
+      font-size: 22px;
+    }
+  
+    .counter-wrapper h1 {
+      margin-bottom: 30px;
+    }
+  
+    .counter_content p {
+      font-size: 16px;
+      line-height: 22px;
+      margin-top: 30px;
+    }
+  
+    #map_section {
+      height: 500px;
+    }
+  
+    #map_section .map_counter {
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    footer .copyright {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+  
+    footer .footer_link_ {
+      justify-content: center;
+    }
+  
+    header .humberger_icon {
+      margin-left: 0;
+    }
+  
+    header>div:first-child {
+      display: inline-flex;
+      column-gap: 15px;
+    }
+  }
