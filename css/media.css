@@ -30,7 +30,8 @@
   }
   
   @media only screnn and (max-width:768px) {
-    .counter-wrapper {
+    .counter-wrapper,
+    #our_business_Sec {
       padding: 75px 0;
     }
   }
@@ -76,7 +77,8 @@
       padding: 0 15px;
     }
   
-    .counter-wrapper {
+    .counter-wrapper,
+    #our_business_Sec {
       padding: 50px 0;
     }
   
