@@ -1,4 +1,38 @@
 /* Responsive Styling */
+@media screen and (min-width:1200px) and (max-width:1600px) {
+  #index .strength-scratch-section .div-flex .text-content .para {
+      width: 90%
+  }
+  .strength-scratch-section .div-flex .strength-scratch-slider .slick-list .slider .banner-txt .content .bold-title {
+    font-size: 24px
+}
+}
+@media screen and (max-width:1200px) {
+  .strength-scratch-section {
+    height: 100%
+}
+  .strength-scratch-section .div-flex {
+      min-height: 50vh
+  }
+  .strength-scratch-section .div-flex .text-content .head-title {
+    font-size: 30px
+}
+.strength-scratch-section .div-flex .text-content .sub-title {
+  font-size: 20px
+}
+.strength-scratch-section .div-flex .text-content .para {
+  font-size: 14px
+}
+.strength-scratch-section .div-flex .strength-scratch-slider .slick-list .slider .banner-txt .content .bold-title {
+  font-size: 20px;
+  text-align: left;
+  padding: 0 15px
+}
+.strength-scratch-section .div-flex .strength-scratch-slider .slick-list .slider .banner-txt .content .sub-title {
+  font-size: 14px
+}
+
+}
 @media only screen and (max-width:991px) {
     footer .row {
       justify-content: center;
@@ -34,6 +68,13 @@
     #our_business_Sec {
       padding: 75px 0;
     }
+    .strength-scratch-section {
+      padding: 20px 0
+  }
+  .strength-scratch-section .div-flex .text-content .para {
+    margin: 10px 0;
+    width: 100%
+}
   }
   
   @media (max-width: 767px) {
@@ -41,6 +82,33 @@
       flex: 0 0 50%;
       max-width: 50%;
     }
+    .strength-scratch-section .div-flex {
+      padding-left: 0;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      padding-top: 40px;
+  }
+  .strength-scratch-section .div-flex .text-content {
+    width: 100%
+}
+.strength-scratch-section .div-flex .strength-scratch-slider {
+  width: 100%;
+  padding: 30px 0
+}
+.strength-scratch-section .div-flex .strength-scratch-slider .slick-list .slider .banner-txt {
+  left: 0
+}
+.strength-scratch-section .div-flex .strength-scratch-slider .slick-list .slider .banner-txt .content .sub-title {
+  padding: 0 15px
+}
+.strength-scratch-section .div-flex .strength-scratch-slider .slick-arrow.slick-next {
+  left: 50%;
+  margin: 0 15px
+}
+.strength-scratch-section .div-flex .strength-scratch-slider .slick-arrow.slick-prev {
+  left: 50%;
+  margin: 0 -15px
+}
   }
   
   @media only screen and (max-width:575px) {
@@ -125,4 +193,7 @@
       display: inline-flex;
       column-gap: 15px;
     }
+    .strength-scratch-section {
+      height: 200vw;
+  }
   }

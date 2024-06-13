@@ -307,6 +307,8 @@ header {
 
 .over_menu ul {
   padding-right: 2rem;
+  left: unset;
+  right: 0
 }
 
 #enquiryBtn {
@@ -532,3 +534,248 @@ figure.effect-layla:hover img {
 	transition-delay: 0.15s;
 }
 
+.strength-scratch-section {
+  background: url(../images/strength-scratch-bg.jpg);
+  background-size: cover;
+  height: 100vh;
+  position: relative
+}
+.strength-scratch-section .div-flex {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-left: 5%
+}
+.strength-scratch-section .div-flex .text-content {
+  width: 35%;
+  margin-right: 2%
+}
+.strength-scratch-section .div-flex .text-content .head-title {
+  color: #121212;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 15px
+}
+.strength-scratch-section .div-flex .text-content .sub-title {
+  font-family: "Exo", sans-serif;
+  color: #4578b9;
+  font-size: 30px
+}
+.strength-scratch-section .div-flex .text-content .para {
+  /* font-family: "Lato-Regular"; */
+  color: #222;
+  font-size: 16px;
+  margin: 25px 0;
+  width: 70%;
+  line-height: 1.2;
+  letter-spacing: 1px
+}
+.strength-scratch-section .div-flex .text-content .gif-logos {
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%
+}
+
+.strength-scratch-section .div-flex .text-content .gif-logos .gif-img {
+  margin: 0 10px 0 0
+}
+
+.strength-scratch-section .div-flex .strength-scratch-slider {
+  width: 65%
+} .strength-scratch-section .div-flex .strength-scratch-slider .slick-list {
+  padding: 75px 0
+}
+
+ .strength-scratch-section .div-flex .strength-scratch-slider .slick-list .slider {
+  position: relative;
+  transition: linear .9s
+}
+
+ .strength-scratch-section .div-flex .strength-scratch-slider .slick-list .slider:focus {
+  outline: 0
+}
+
+ .strength-scratch-section .div-flex .strength-scratch-slider .slick-list .slider.slick-current {
+  transform: scale(1.1);
+  z-index:  1
+}
+
+ .strength-scratch-section .div-flex .strength-scratch-slider .slick-list .slider.slick-current .banner-txt {
+  opacity: 1
+}
+
+ .strength-scratch-section .div-flex .strength-scratch-slider .slick-list .slider.slick-current.slick-active .gradient-overlay {
+  background-image: linear-gradient(transparent, rgba(18, 18, 18, 0.48), #121212)
+}
+
+ .strength-scratch-section .div-flex .strength-scratch-slider .slick-list .slider .banner-txt {
+  position: absolute;
+  bottom: 8%;
+  left: 5%;
+  text-align: center;
+  color: #fff;
+  opacity: 0
+}
+.strength-scratch-section .div-flex .strength-scratch-slider .slick-list .slider .banner-txt .content .bold-title {
+  font-family: "Exo", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  line-height: 1.2
+}.strength-scratch-section .div-flex .strength-scratch-slider .slick-list .slider .banner-txt .content .sub-title {
+  font-family: "Lato-Regular";
+  font-size: 16px;
+  opacity: .9;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  padding: 0 20px;
+  text-align: left
+}
+.strength-scratch-section .div-flex .strength-scratch-slider .slick-list .slider .gradient-overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background-image: linear-gradient(transparent, transparent, #121212)
+}
+
+ .strength-scratch-section .div-flex .strength-scratch-slider .slick-arrow {
+  background: transparent;
+  transform: translate(-50%, -50%)
+}
+
+ .strength-scratch-section .div-flex .strength-scratch-slider .slick-arrow.slick-prev {
+  top: 100%
+}
+.strength-scratch-section .div-flex .strength-scratch-slider .slick-arrow.slick-prev:before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: "\f060";
+  color: #4578b9
+}
+
+ .strength-scratch-section .div-flex .strength-scratch-slider .slick-arrow.slick-next {
+  top: 100%;
+  right: auto
+}
+.strength-scratch-section .div-flex .strength-scratch-slider .slick-arrow.slick-next:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f061";
+  color: #4578b9;
+  padding: 0 5px
+}
+.over_menu ul.open{
+  left: -100%;
+}
+.over_menu ul.over_level1{
+  left: 81% !important;
+    opacity: 0;
+}
+.overmenuopen .over_menu ul.over_level1{
+  right: 0%;
+    opacity: 1;
+}
+.over_menu .over_menu_close.open{
+  left: unset;
+  right: 200px;
+}
+.over_menu .over_menu_close.open {
+left: unset;
+  right: 20px;
+}
+.over_menu .over_menu_close::after{
+  line-height: normal;
+  margin-top: -3px;
+}
+.strength-scratch-section .slick-prev,
+.strength-scratch-section .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: 0;
+    background: transparent
+}
+
+.strength-scratch-section .slick-prev:hover,
+.strength-scratch-section .slick-prev:focus,
+.strength-scratch-section .slick-next:hover,
+.strength-scratch-section .slick-next:focus {
+    color: transparent;
+    outline: 0;
+    background: transparent
+}
+
+.strength-scratch-section .slick-prev:hover:before,
+.strength-scratch-section .slick-prev:focus:before,
+.strength-scratch-section .slick-next:hover:before,
+.strength-scratch-section .slick-next:focus:before {
+    opacity: 1
+}
+
+.strength-scratch-section .slick-prev.slick-disabled:before,
+.strength-scratch-section .slick-next.slick-disabled:before {
+    opacity: .25
+}
+
+.strength-scratch-section .slick-prev:before,
+.strength-scratch-section .slick-next:before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.strength-scratch-section .slick-prev {
+    left: -25px
+}
+
+.strength-scratch-section [dir='rtl'] .slick-prev {
+    right: -25px;
+    left: auto
+}
+
+.strength-scratch-section .slick-prev:before {
+    content: '←'
+}
+
+.strength-scratch-section [dir='rtl'] .slick-prev:before {
+    content: '→'
+}
+
+.strength-scratch-section .slick-next {
+    right: -25px
+}
+
+.strength-scratch-section [dir='rtl'] .slick-next {
+    right: auto;
+    left: -25px
+}
+
+.strength-scratch-section .slick-next:before {
+    content: '→'
+}
+
+.strength-scratch-section [dir='rtl'] .slick-next:before {
+    content: '←'
+}
+
+.strength-scratch-section .strength-scratch-section .slick-dotted.slick-slider {
+    margin-bottom: 30px
+}
