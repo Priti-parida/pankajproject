@@ -58,25 +58,23 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-// COUNTER JS
-document.addEventListener("DOMContentLoaded", () => {
-    function counter(id, start, end, duration) {
-     let obj = document.getElementById(id),
-      current = start,
-      range = end - start,
-      increment = end > start ? 1 : -1,
-      step = Math.abs(Math.floor(duration / range)),
-      timer = setInterval(() => {
-       current += increment;
-       obj.textContent = current;
-       if (current == end) {
-        clearInterval(timer);
-       }
-      }, step);
-    }
-    counter("map_first", 0, 9.6, 100);
-    counter("map_second", 0, 1634, 1000);
-    counter("map_third", 0, 20, 20000);
-     counter("map_fourth", 0, 10, 20000);
-   });
+// video modal
+
+document.addEventListener("DOMContentLoaded", function() {
+  var videoIcon = document.querySelector('.video_icon');
+  var modal = document.querySelector('.cus_modal');
+  var modalClose = document.querySelector('.cus_modal_close');
+  videoIcon.addEventListener('click', function() {
+      modal.classList.add('open');
+  });
+  modalClose.addEventListener('click', function() {
+      modal.classList.remove('open');
+  });
+  modal.addEventListener('click', function(event) {
+      if (event.target === modal) {
+          modal.classList.remove('open');
+      }
+  });
+});
+
    
