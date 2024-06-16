@@ -40,7 +40,7 @@
     font-size: 14px
   }
   #our_business_Sec .cus_text60 {
-    font-size: 2.25rem;
+    font-size: 1.65rem;
     line-height: 2.5rem;
 }
 }
@@ -146,11 +146,11 @@ footer .footer_wrapper .row{
     left: 50%;
     margin: 0 -15px
   }
-  #our_business_Sec .cus_text60 {
-    font-size: 1.8=75rem;
+  /* #our_business_Sec .cus_text60 {
+    font-size: 1.25rem;
     line-height: 2.25rem;
     line-height: 1.25;
-}
+} */
 footer .copyright_text{
 margin-top: 10px;
 }
