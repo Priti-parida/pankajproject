@@ -48,6 +48,9 @@
 footer .footer_wrapper .row{
   row-gap: 35px;
 }
+.nj_info_content span{
+  height: 25px;
+}
 }
 @media only screen and (max-width:991px) {
   /* footer .row {
@@ -157,6 +160,10 @@ margin-top: 10px;
 #making_difference #carouselExampleFade {
   margin: 0 auto 35px;
   padding: 0 15px;
+}
+.over_menu ul.over_level1,
+.over_menu ul.open{
+  left: 0 !important;
 }
 }
 

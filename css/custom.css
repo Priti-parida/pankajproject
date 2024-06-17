@@ -8,6 +8,7 @@ html,
 body {
   overflow-x: hidden;
   font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -23,7 +24,9 @@ body {
   --tw-scale-x: 1;
   --tw-scale-y: 1;
 }
-
+a,a:hover{
+  text-decoration: none;
+}
 h1,
 h2,
 h3,
@@ -739,7 +742,10 @@ header {
 
 .over_menu .over_menu_close::after {
   line-height: normal;
-  margin-top: -3px;
+  /* margin-top: -3px; */
+}
+.back{
+  cursor: pointer;
 }
 
 .strength-scratch-section .slick-prev,
@@ -846,5 +852,19 @@ header {
   padding: 100px 0;
 }
 .new_release .list-container{
+  background-color: var(--secondary-color);
+}
+.slider_wrapper_small  .list_view_content_title {
+  font-size: 24px !important;
+  margin: 20px 0 10px;
+}
+.mask_img_one{
+  mask-image: url('../images/quote_left.png');
+  mask-size: 100% 100%;
+  background-color: var(--primary-color);
+}
+.mask_img_two{
+  mask-image: url('../images/quote_right.png');
+  mask-size: 100% 100%;
   background-color: var(--secondary-color);
 }

@@ -26,6 +26,19 @@ $(".strength-scratch-slider").slick({
     }
   }]
 });
+$(".slider_wrapper_small").slick({
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  autoplay: !0,
+  autoplaySpeed: 5e3,
+  dots: true,
+  arrows: false,
+  infinite: !0,
+  easing: "linear",
+  focusOnSelect: !0,
+  pauseOnHover: !1,
+
+});
 // sidebar menu js
 document.addEventListener('DOMContentLoaded', function() {
   const hamburgerIcon = document.querySelector('.humberger_icon');
@@ -44,6 +57,33 @@ document.addEventListener('DOMContentLoaded', function() {
     overMenuClose.classList.remove('open');
   });
 });
+
+// Select all elements with the class 'back'
+document.addEventListener('DOMContentLoaded', function() {
+  // Find all 'back' links within elements with class 'menu_head'
+  const backLinks = document.querySelectorAll('.menu_head .back ');
+
+  // Attach click event listener to each 'back' link
+  backLinks.forEach(link => {
+    link.addEventListener('click', function(event) {
+      event.preventDefault(); // Prevent default anchor behavior
+
+      // Find the parent ul element with class 'over_level2'
+      const parentUl = link.closest('.over_level2');
+
+      // Remove 'open' class from the parent ul if it exists
+      if (parentUl) {
+        parentUl.classList.remove('open');
+      }
+    });
+  });
+});
+
+
+
+
+
+
 
   // Get all list items
   const listItems = document.querySelectorAll('.over_level1 li');
