@@ -1055,19 +1055,20 @@ code:after {
 }
 
 .breadcumbs ul li+li {
-    padding-left: 32px
+    padding-left: 32px !important
 }
 
 .breadcumbs ul li+li:before {
-    content: "";
+    content: "" !important;
     position: absolute;
-    background-image: url(/images/icons/arrow.svg);
+    background-image: url(/images/arrow.svg);
     height: 15px;
     width: 9px;
     display: block;
     left: 10px;
     background-size: cover;
-    top: 1px
+    top: 1px;
+    padding: 0;
 }
 
 .breadcumbs ul li:last-child {
@@ -10055,7 +10056,8 @@ code:after {
     border-bottom-width: 2px;
     --tw-border-opacity: 1;
     border-color: rgb(0 38 103/var(--tw-border-opacity));
-    padding-bottom: .75rem
+    padding-bottom: .75rem;
+    border-style: solid;
 }
 
 .leadership_modal_content_head_social {

@@ -81,6 +81,39 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+document.addEventListener('DOMContentLoaded', function() {
+  let modal = document.querySelector('.leadership_modal');
+  let close = document.querySelector('.leadership_modal_close');
+  const cardLinks = document.querySelectorAll('.card_view_linking');
+
+  cardLinks.forEach(function(cardLink) {
+      cardLink.addEventListener('click', function() {
+          modal.classList.remove('d-none');
+
+          // Retrieve content from the clicked card
+          let getName = cardLink.parentElement.querySelector('.card_view_content h3').textContent.trim();
+          console.log('getName', getName)
+          let getPosition = cardLink.parentElement.querySelector('.card_view_content p').textContent.trim();
+          let getDescription =  cardLink.parentElement.querySelector('.card_view_content .desc').textContent.trim();;
+
+          // Update modal content
+          let ownerName = document.querySelector('.leadership_modal .leadership_modal_content_head h2');
+          let ownerPosition = document.querySelector('.leadership_modal .leadership_modal_content_head p');
+          let ownerDescription = document.querySelector('.leadership_modal .leadership_modal_content_description');
+
+          ownerName.textContent = getName;
+          ownerPosition.textContent = getPosition;
+          ownerDescription.textContent = getDescription;
+
+          console.log('Modal content updated:', getName, getPosition, getDescription);
+          console.log('Modal content updated:', ownerName, ownerPosition, getDescription);
+      });
+  });
+
+  close.addEventListener('click', function() {
+      modal.classList.add('d-none');
+  });
+});
 
 
 
