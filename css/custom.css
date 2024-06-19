@@ -868,3 +868,14 @@ header {
   mask-size: 100% 100%;
   background-color: var(--secondary-color);
 }
+.inner_banner{
+  position: relative;
+}
+.releted_product .list_view{
+  display: flex;
+}
+
+.list_view.row{
+  margin-left: 0;
+  margin-right: 0;
+}

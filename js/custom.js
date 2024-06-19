@@ -81,40 +81,41 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-document.addEventListener('DOMContentLoaded', function() {
-  let modal = document.querySelector('.leadership_modal');
-  let close = document.querySelector('.leadership_modal_close');
-  const cardLinks = document.querySelectorAll('.card_view_linking');
+document.addEventListener('DOMContentLoaded', function () {
+  const modal = document.querySelector('.leadership_modal');
+  const modalClose = document.querySelector('.leadership_modal_close');
+  const modalImage = modal.querySelector('.leadership_modal_image img');
+  const modalName = modal.querySelector('.leadership_modal_content_head h2');
+  const modalTitle = modal.querySelector('.leadership_modal_content_head p');
+  const modalDesc = modal.querySelector('.leadership_modal_content_description');
 
-  cardLinks.forEach(function(cardLink) {
-      cardLink.addEventListener('click', function() {
+  document.querySelectorAll('.card_view_linking').forEach(function (link) {
+      link.addEventListener('click', function () {
+          const card = this.closest('.card_view');
+          const name = card.getAttribute('data-name');
+          const title = card.getAttribute('data-title');
+          const desc = card.getAttribute('data-desc');
+          const img = card.getAttribute('data-img');
+
+          modalImage.src = img;
+          modalName.textContent = name;
+          modalTitle.textContent = title;
+          modalDesc.innerHTML = desc;
+
           modal.classList.remove('d-none');
-
-          // Retrieve content from the clicked card
-          let getName = cardLink.parentElement.querySelector('.card_view_content h3').textContent.trim();
-          console.log('getName', getName)
-          let getPosition = cardLink.parentElement.querySelector('.card_view_content p').textContent.trim();
-          let getDescription =  cardLink.parentElement.querySelector('.card_view_content .desc').textContent.trim();;
-
-          // Update modal content
-          let ownerName = document.querySelector('.leadership_modal .leadership_modal_content_head h2');
-          let ownerPosition = document.querySelector('.leadership_modal .leadership_modal_content_head p');
-          let ownerDescription = document.querySelector('.leadership_modal .leadership_modal_content_description');
-
-          ownerName.textContent = getName;
-          ownerPosition.textContent = getPosition;
-          ownerDescription.textContent = getDescription;
-
-          console.log('Modal content updated:', getName, getPosition, getDescription);
-          console.log('Modal content updated:', ownerName, ownerPosition, getDescription);
       });
   });
 
-  close.addEventListener('click', function() {
+  modalClose.addEventListener('click', function () {
       modal.classList.add('d-none');
   });
-});
 
+  modal.addEventListener('click', function (e) {
+      if (e.target === modal) {
+          modal.classList.remove('active');
+      }
+  });
+});
 
 
 

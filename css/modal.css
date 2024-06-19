@@ -7441,7 +7441,8 @@ code:after {
     --tw-border-opacity: 1;
     border-color: rgb(0 38 103/var(--tw-border-opacity));
     padding-top: 1rem;
-    padding-bottom: 1rem
+    padding-bottom: 1rem;
+    border-style: solid;
 }
 
 @media (min-width: 768px) {
