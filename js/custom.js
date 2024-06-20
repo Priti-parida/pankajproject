@@ -58,26 +58,40 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-// Select all elements with the class 'back'
 document.addEventListener('DOMContentLoaded', function() {
-  // Find all 'back' links within elements with class 'menu_head'
-  const backLinks = document.querySelectorAll('.menu_head .back ');
+  const listItems = document.querySelectorAll('.over_level1 > li');
+  const overLevel2 = document.querySelectorAll('.over_level2');
 
-  // Attach click event listener to each 'back' link
+  // Click event handling for list items
+  listItems.forEach((item) => {
+    item.addEventListener('click', () => {
+      listItems.forEach(li => li.classList.remove('active'));
+      overLevel2.forEach(div => div.classList.remove('open'));
+      
+      item.classList.add('active');
+      const submenu = item.querySelector('.over_level2');
+      if (submenu) {
+        submenu.classList.add('open');
+      }
+    });
+  });
+
+  // Click event handling for back links
+  const backLinks = document.querySelectorAll('.menu_head .back');
   backLinks.forEach(link => {
     link.addEventListener('click', function(event) {
-      event.preventDefault(); // Prevent default anchor behavior
-
-      // Find the parent ul element with class 'over_level2'
-      const parentUl = link.closest('.over_level2');
-
-      // Remove 'open' class from the parent ul if it exists
+      event.stopPropagation();
+      const parentUl = this.closest('.over_level2');
       if (parentUl) {
         parentUl.classList.remove('open');
       }
     });
   });
 });
+
+
+
+
 
 
 
@@ -119,18 +133,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-  // Get all list items
-  const listItems = document.querySelectorAll('.over_level1 li');
-  const overLevel2 = document.querySelectorAll('.over_level2');
-  listItems.forEach((item, index) => {
-    item.addEventListener('click', () => {
-      listItems.forEach(li => li.classList.remove('active'));
-      overLevel2.forEach(div => div.classList.remove('open'));
-      item.classList.add('active');
-      const menuGet = item.querySelector('.over_level2')
-      menuGet.classList.add('open');
-    });
-  });
+
 
 // video modal
 
