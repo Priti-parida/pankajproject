@@ -91,10 +91,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
-
-
-
 document.addEventListener('DOMContentLoaded', function () {
   const modal = document.querySelector('.leadership_modal');
   const modalClose = document.querySelector('.leadership_modal_close');
@@ -154,4 +150,26 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+//media modal
+let getMediaCard = Array.from(document.getElementsByClassName('card_view_wrapper'));
+let media_modal = document.querySelector('.media_modal');
+let modal_img = document.querySelector('.media_modal .cus_modal_wrap img');
+let media_close = document.querySelector('.media_close')
+console.log(modal_img)
+let getBody = document.querySelector('body');
+getMediaCard.forEach((media )=> {
+  media.addEventListener('click',(e)=>{
+    console.log(e.target.currentSrc)
+    e.preventDefault();
+    media_modal.classList.add('d-block')
+    getBody.classList.add('overflow-hidden')
+    modal_img.src = e.target.currentSrc
+     
+
+  })
+})
+media_close.addEventListener('click',()=>{
+  media_modal.classList.remove('d-block')
+  getBody.classList.remove('overflow-hidden')
+})
    
