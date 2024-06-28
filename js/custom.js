@@ -39,6 +39,19 @@ $(".slider_wrapper_small").slick({
   pauseOnHover: !1,
 
 });
+$(".peple_carrer .slick-list").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: !0,
+  autoplaySpeed: 5e3,
+  dots: true,
+  arrows: false,
+  infinite: !0,
+  easing: "linear",
+  focusOnSelect: !0,
+  pauseOnHover: !1,
+
+});
 // sidebar menu js
 document.addEventListener('DOMContentLoaded', function() {
   const hamburgerIcon = document.querySelector('.humberger_icon');
